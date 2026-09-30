@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital - Todo Pollo Esquel</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #121619; 
+            margin: 0; 
+            padding: 0; 
+            color: #ffffff; 
+        }
+        .header { 
+            background: linear-gradient(135deg, #f39c12, #d35400); 
+            color: white; 
+            text-align: center; 
+            padding: 25px 15px; 
+            border-bottom-left-radius: 20px; 
+            border-bottom-right-radius: 20px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .header h1 { margin: 0; font-size: 26px; font-weight: bold; }
+        .header p { margin: 5px 0 0; opacity: 0.9; font-size: 14px; }
+        .container { max-width: 500px; margin: 0 auto; padding: 20px 15px 90px; }
+        .category { margin-top: 20px; }
+        .category-title { 
+            font-size: 18px; 
+            border-bottom: 2px solid #f39c12; 
+            padding-bottom: 5px; 
+            color: #f39c12; 
+            margin-bottom: 15px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        .card { 
+            background: #1e2429; 
+            border-radius: 12px; 
+            padding: 15px; 
+            margin-bottom: 12px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border: 1px solid #2c343b;
+        }
+        .card-info { max-width: 65%; }
+        .card-title { font-weight: bold; font-size: 15px; margin: 0 0 4px 0; color: #ffffff; }
+        .card-desc { font-size: 12px; color: #a0aab2; margin: 0; line-height: 1.3; }
+        .card-price { 
+            font-weight: bold; 
+            font-size: 15px; 
+            color: #2ecc71; 
+            background: #143221; 
+            padding: 6px 10px; 
+            border-radius: 8px; 
+            white-space: nowrap;
+        }
+        .btn-wsp { 
+            position: fixed; 
+            bottom: 15px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 90%; 
+            max-width: 470px; 
+            background-color: #25d366; 
+            color: white; 
+            text-align: center; 
+            text-decoration: none; 
+            padding: 14px; 
+            border-radius: 30px; 
+            font-weight: bold; 
+            font-size: 16px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🍗 Todo Pollo Esquel</h1>
+        <p>📍 Menú Digital e Interactivo</p>
+    </div>
+
+    <div class="container">
+
+        <!-- PLATOS PRINCIPALES -->
+        <div class="category">
+            <div class="category-title">Platos Principales</div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Milanesa de Pollo o De...</p>
+                    <p class="card-desc">¡Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Milanesa de Pollo con P...</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Pata Muslo 🍗 con Ens...</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Pechuga Grillada con E...</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Milanesa de Carne a Ca...</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+        </div>
+
+        <!-- CARNES Y PESCADOS -->
+        <div class="category">
+            <div class="category-title">Carnes y Pescados</div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Churrasco de Carne co...</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Milanesa de Merluza</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+        </div>
+
+        <!-- SÁNDWICHES, PIZZAS Y PASTA -->
+        <div class="category">
+            <div class="category-title">Sándwiches, Pizzas y Pastas</div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Sanguche de Mila de C...</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 20.000,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Pizza Napolitana (Jamó...)</p>
+                    <p class="card-desc">Con bebida aparte!</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-title">Ravioles o Sorrentinos...</p>
+                    <p class="card-desc">Opcional con queso rallado</p>
+                </div>
+                <div class="card-price">ARS 17.000,00</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTÓN DIRECTO A WHATSAPP -->
+    <a href="https://wa.me/5492945000000?text=Hola!%20Quiero%20hacer%20un%20pedido%20en%20Todo%20Pollo" class="btn-wsp" target="_blank">
+        📲 Hacer Pedido por WhatsApp
+    </a>
+
+</body>
+</html>
